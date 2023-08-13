@@ -1,6 +1,6 @@
 resource "aws_elb" "bar" {
-  name               = "raham-terraform-elb"
-  availability_zones = ["eu-west-3a", "eu-west-3b"]
+  name               = "nani-terraform-elb"
+  availability_zones = ["us-west-1a", "us-west-1b"]
 
   listener {
     instance_port     = 80
@@ -39,7 +39,7 @@ resource "aws_elb" "bar" {
 
 /*resource "aws_instance" "one" {
   for_each = toset(["one", "two", "three"])
-  ami           = "ami-006be9ab6a140de6e"
+  ami           = "ami-09f67f6dc966a7829"
   instance_type = "t2.micro"
   tags = {
     Name = "instance-${each.key}"
